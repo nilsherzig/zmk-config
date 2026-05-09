@@ -28,10 +28,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E             &kp DE_R               &kp DE_T      &kp C_MUTE  &kp C_PP  &kp DE_Y    &kp DE_U                 &kp DE_I         &kp DE_O    &kp DE_P     &kp BSPC
-&kp LCTRL  &kp DE_A  &kp DE_S  &kp DE_D             &kp DE_F               &kp DE_G      &kp LALT    &kp RALT  &kp DE_H    &kp DE_J                 &kp DE_K         &kp DE_L    &kp DE_SEMI  &kp DE_SQT
-&kp LSHFT  &kp DE_Z  &kp DE_X  &kp DE_C             &kp DE_V               &kp DE_B                            &kp DE_N    &kp DE_M                 &kp DE_COMMA     &kp DE_DOT  &kp DE_FSLH  &kp ESC
-                         &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &kp SPACE                        &kp RET  &mt LEFT_SHIFT ENTER  &kp LEFT_ALT
+&kp DE_SZ         &kp DE_Q  &kp DE_W  &kp DE_E          &kp DE_R            &kp DE_T   &kp C_MUTE  &kp C_PP  &kp DE_Y  &kp DE_U              &kp DE_I      &kp DE_O    &kp DE_P         &kp DE_U_UMLAUT
+&kp LCTRL         &kp DE_A  &kp DE_S  &kp DE_D          &kp DE_F            &kp DE_G   &kp LALT    &kp RALT  &kp DE_H  &kp DE_J              &kp DE_K      &kp DE_L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp DE_LESS_THAN  &kp DE_Z  &kp DE_X  &kp DE_C          &kp DE_V            &kp DE_B                         &kp DE_N  &kp DE_M              &kp DE_COMMA  &kp DE_DOT  &kp DE_FSLH      &kp ESC
+                                      &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &kp SPACE                        &kp RET   &mt LEFT_SHIFT ENTER  &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -47,10 +47,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB    &kp DE_N1     &kp DE_N2        &kp DE_N3     &kp DE_N4     &kp DE_N5       &kp LCTRL  &kp RCTRL  &kp DE_N6 &kp DE_N7 &kp DE_N8  &kp DE_N9  &kp DE_N0 &kp BSPC
-&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &kp RALT   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans    &trans    &trans     &trans     &trans  &trans
-                                          &kp LGUI      &trans        &kp SPACE                             &kp LGUI  &trans    &kp SPACE
+&kp TAB    &kp DE_N1     &kp DE_N2        &kp DE_N3     &kp DE_N4     &kp DE_N5       &kp LCTRL  &kp RCTRL  &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp BSPC
+&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &kp RALT   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans     &trans
+&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans     &trans     &trans     &trans     &trans     &trans
+                                          &kp LGUI      &trans        &kp SPACE                             &kp LGUI   &trans     &kp SPACE
             >;
         };
 
@@ -67,7 +67,7 @@
 &kp TAB    &kp DE_EXCL  &kp DE_AT  &kp DE_HASH  &kp DE_DLLR  &kp DE_PRCNT  &kp LCTRL  &kp RCTRL  &kp DE_CARET  &kp DE_AMPS   &kp DE_ASTRK  &kp DE_LPAR  &kp DE_RPAR  &kp BSPC
 &kp LCTRL  &trans       &trans     &trans       &trans       &trans        &kp LALT   &kp RALT   &kp DE_MINUS  &kp DE_EQUAL  &kp DE_LBKT   &kp DE_RBKT  &kp DE_BSLH  &kp DE_GRAVE
 &kp LSHFT  &trans       &trans     &trans       &trans       &trans                              &kp DE_UNDER  &kp DE_PLUS   &kp DE_LBRC   &kp DE_RBRC  &kp DE_PIPE  &kp DE_TILDE
-                             &kp LGUI  &trans    &kp SPACE                        &kp RET    &trans     &kp RALT
+                                   &kp LGUI     &trans       &kp SPACE                           &kp RET       &trans        &kp RALT
             >;
         };
 
