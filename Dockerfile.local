@@ -1,0 +1,11 @@
+FROM zmkfirmware/zmk-build-arm:stable
+
+ARG YQ_VERSION=v4.44.3
+
+ADD https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64 /usr/local/bin/yq
+COPY scripts/local-firmware-build.sh /usr/local/bin/local-firmware-build
+
+RUN chmod +x /usr/local/bin/yq /usr/local/bin/local-firmware-build
+
+WORKDIR /workspaces/zmk-config
+ENTRYPOINT ["/usr/local/bin/local-firmware-build"]
