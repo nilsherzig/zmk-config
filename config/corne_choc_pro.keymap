@@ -12,12 +12,10 @@
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
+};
 
-    behaviors {
-        lt {
-            quick-tap-ms = <150>;
-        };
-    };
+&lt {
+    quick-tap-ms = <150>;
 };
 
 / {
