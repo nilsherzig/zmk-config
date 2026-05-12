@@ -24,6 +24,13 @@
             bindings = <&kp LA(SPACE) &kp G &kp H &kp O &kp S &kp T &kp T &kp Y &kp RET>;
             label = "OPEN_TERMINAL";
         };
+
+        open_firefox: open_firefox {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(SPACE) &kp F &kp I &kp R &kp E &kp F &kp O &kp X &kp RET>;
+            label = "OPEN_FIREFOX";
+        };
     };
 
     keymap {
@@ -40,7 +47,7 @@
 
             bindings = <
 &kp DE_SZ         &kp DE_Q  &kp DE_W  &kp DE_E          &kp DE_R            &kp DE_T         &open_terminal  &kp LC(TAB)      &kp DE_Z     &kp DE_U              &kp DE_I      &kp DE_O    &kp DE_P         &kp DE_U_UMLAUT
-&kp LEFT_ALT      &kp DE_A  &kp DE_S  &kp DE_D          &kp DE_F            &kp DE_G         &none           &kp LS(LC(TAB))  &kp DE_H     &kp DE_J              &kp DE_K      &kp DE_L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp LEFT_ALT      &kp DE_A  &kp DE_S  &kp DE_D          &kp DE_F            &kp DE_G         &open_firefox   &kp LS(LC(TAB))  &kp DE_H     &kp DE_J              &kp DE_K      &kp DE_L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
 &kp DE_LESS_THAN  &kp DE_Y  &kp DE_X  &kp DE_C          &kp DE_V            &kp DE_B                                          &kp DE_N     &kp DE_M              &kp DE_COMMA  &kp DE_DOT  &kp DE_MINUS     &kp DE_HASH
                                       &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &lt 1 BACKSPACE                                   &lt 1 SPACE  &mt LEFT_SHIFT ENTER  &kp LEFT_ALT
             >;
